@@ -1,3 +1,4 @@
+//posts a new session, does not have the stoptime or the total time 
 function postSession(){
     const postSessionApiUrl = "https://localhost:5001/api/sessions";
 
@@ -21,11 +22,11 @@ function postSession(){
     })
     .then((response)=>{
         console.log(response);
-        //location.reload();  //hello use this to hide the card / set the timer / do whatever it is u need to do 
         hideCard(); 
     })
 }
 
+//hides the study survey 
 function hideCard(){
         var x = document.getElementById("container1");
         console.log(x); 
@@ -45,6 +46,7 @@ function hideCard(){
 
 }
 
+//hides the timer page, so the study survey will be shown again 
 function reverseHideCard(){
     var x = document.getElementById("container1");
     console.log(x); 
@@ -66,6 +68,7 @@ function reverseHideCard(){
 
 }
 
+//timer logic 
 let seconds = 0;
 let minutes = 0;
 let hours = 0; 
@@ -129,6 +132,7 @@ function startStop(){
 
 }
 
+//resets the timer, and calls getJsonLength
 function reset(){
     window.clearInterval(interval);
     seconds = 0;
@@ -141,7 +145,7 @@ function reset(){
 }
 
 
-//updates the stopTime 
+//updates the stopTime at, takes in the id from the json in the last index 
 function putSession(id){
     const putSessionApiUrl = "https://localhost:5001/api/sessions/" + id;
     //var id = JSON[length-1];  
@@ -245,7 +249,7 @@ function dateFromISO(s) {
     return new Date(Date.UTC(s[0], --s[1]||'', s[2]||'', s[3]||'', s[4]||'', s[5]||'', s[6]||''))
   }
 
-//updates the Total Time 
+//takes in the last element as an id, and takes in the total time, updates the last json object 
 function putTotalTime(id, timeTotal){
     const putTotalTimeApiUrl = "https://localhost:5001/api/sessions/" + id;
     //console.log(id); 
