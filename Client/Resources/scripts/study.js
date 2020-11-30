@@ -98,15 +98,20 @@ function getTotalHours(){
 
         var i = 0; 
         total = 0,  
-        total321 = 0; 
+        //total321 = 0; 
         time = json.totalTime,  
-        i;
-        for (i = 0; i < json.length; i++) {  
-        total += json[i].totalTime;  
-            if(json.category == "MIS321"){ //works, but will not read through the if statement 
-                total321 += json[i].totalTime; 
-                console.log(total321); 
-            }
+
+            i;
+    
+             for (i = 0; i < json.length; i++) {  
+                if(json[i].category != "Goal"){
+                    total += json[i].totalTime; 
+    
+                }
+            
+          
+        
+
         }
          console.log(total);  
 
@@ -115,8 +120,6 @@ function getTotalHours(){
             "<div class=\"card-header\"><h4>Virtual Library - Study Hours</h4></div>" + //this is good
             "<div class=\"card-body\">" + //card body 
             "<h1 class=\"card-title\">Total Logged Study Hours: " + total.toFixed(2) + "</h1>" + //card title 
-           "<h2 class=\"card-text\" style = \"font-weight: lighter;\">Total MIS321 Hours: " + total321 + " </h2>" + //card text  
-            "<h2 class=\"card-text\" style = \"font-weight: lighter;\">Total GBA300 Hours: </h2>" + //card text  
             "</div></div>"; //close out the body and head 
             
 
