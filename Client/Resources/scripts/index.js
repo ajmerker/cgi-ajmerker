@@ -136,7 +136,7 @@ function reset(){
     hours = 0;
     document.getElementById("timer").innerHTML = "00:00:00"; 
     document.getElementById("startStop").innerHTML = "Start"; 
-    getWhatever();  
+    getJsonLength();  
     //reverseHideCard(); 
 }
 
@@ -169,10 +169,10 @@ function putSession(id){
 
 
 //Gets the ID from the last element in the json array 
-function getWhatever(){
-    const getWhateverApiUrl = "https://localhost:5001/api/sessions"; 
+function getJsonLength(){
+    const getJsonLengthApiUrl = "https://localhost:5001/api/sessions"; 
 
-    fetch(getWhateverApiUrl).then(function(response){
+    fetch(getJsonLengthApiUrl).then(function(response){
         console.log(response); 
         return response.json(); 
     }).then(function(json){
