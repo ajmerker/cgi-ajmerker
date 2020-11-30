@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+    <link rel ="stylesheet" href ="./css/bootstrap (2).css"> 
+    <link rel ="stylesheet" href ="./css/goals.css"> 
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script type="text/Javascript" src = "./Resources/scripts/goals.js"></script>
+    
+        <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul>
+            <li><a class="nav1" href ="./index.html">Home</a></li>
+            <li><a class= "nav2" href ="./study.html">Study Hours</a></li>
+            <li><a class= "nav3" href ="./goals.html">Goals</a></li>
+            <li><a class= "nav4" href ="./page4.html">Library</a></li>
+        </ul>
+    </nav>
+
+        <!--Jumbotron  <div class="jumbotron"  style="background-image: url('./Resources/images/fireplace.gif');"> -->
+    <div class="jumbotron" > 
+        <h2 class="display-3">My Study Goals</h2>
+        <p class="lead"> See many more hours you need to log to meet your goals. </p>
+    </div>
+    
+
+        <!--Container -->
+    <div class = "container">
+        <div class = "row"> 
+            <div class = "col-md-12"> <!--MIS321 Goals -->
+                <h1>
+                    MIS 321 Progress: 
+                <h1>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div id = mis321goals>
+                    <script>getMIS321Goals()</script>
+                </div>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-md-12"> <!--MIS330 Goals -->
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-md-12"> <!--GBA300 Goals -->
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

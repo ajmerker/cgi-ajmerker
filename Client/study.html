@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+    <link rel ="stylesheet" href ="./css/bootstrap (2).css"> 
+    <link rel ="stylesheet" href ="./css/study.css"> 
+    <title>Document</title>
+</head>
+<body onload= getMIS321Hours()>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script type="text/Javascript" src = "./Resources/scripts/study.js"></script>
+    
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul>
+            <li><a class="nav1" href ="./index.html">Home</a></li>
+            <li><a class= "nav2" href ="./study.html">Study Hours</a></li>
+            <li><a class= "nav3" href ="./goals.html">Goals</a></li>
+            <li><a class= "nav4" href ="./page4.html">Library</a></li>
+        </ul>
+    </nav>
+
+    <!--Jumbotron  <div class="jumbotron"  style="background-image: url('./Resources/images/fireplace.gif');"> -->
+    <div class="jumbotron" > 
+        <h2 class="display-3">My Study Hours</h2>
+        <p class="lead"> View the hours you have studied different subjects. </p>
+    </div>
+
+    <!--Card Holder-->
+    <div class = "container" id = "container1" style = "display: block;">
+        <div class = "row" style = "justify-content: left;"> 
+            <!--<div class = "col-md-12 d-flex justify-content-center"> !--> 
+                <div id = "total">
+                    <script> getTotalHours()</script>
+                </div>
+            </div>
+        </div>
+        <div class = "row" style = "justify-content: center;"> 
+            <!--<div class = "col-md-12 d-flex justify-content-center"> !--> 
+                <div id = "mis321">
+
+                </div>
+            </div>
+        </div>
+        <div class = "row" style = "justify-content: center;">
+                <div id = "mis330">
+                    <script> getMIS330Hours()</script>
+                </div>
+            </div>
+        </div>
+        <div class = "row" style = "justify-content: center;">
+                <div id = "gba330">
+                    <script> getGBA300Hours()</script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

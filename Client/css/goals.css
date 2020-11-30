@@ -1,0 +1,33 @@
+.navbar li{
+    display: inline-block; 
+    padding: 20px;
+    font-weight: 120;
+}
+.nav1 {
+    font-weight: bold;
+    font-size: large;  
+}
+.nav2 {
+    
+    font-size: large; 
+}
+.nav3{
+    
+    font-size: large; 
+}
+.nav4{
+    font-size: large;  
+    
+}
+.nav5{
+    font-size:large; 
+}
+
+.progress{
+    /*width: 1%; */ 
+    height: 35px; 
+
+    text-align: center; 
+    line-height: 32px; 
+
+}
